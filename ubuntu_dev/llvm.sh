@@ -69,8 +69,8 @@ fi
 pwd
 cd build 
 
-cmake -g Unix Makefiles ../llvm/
+cmake -g Unix Makefiles ../llvm/ -DLLVM_TARGETS_TO_BUILD="X86"
 
-make
+make 
 
 
