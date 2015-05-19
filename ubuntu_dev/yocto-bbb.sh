@@ -1,6 +1,7 @@
 #!/bin/bash
 
-
+mkdir yocto_bbb
+cd yocto_bbb
 wget http://free-electrons.com/doc/training/yocto/yocto-labs.tar.xz
 tar xf yocto-labs.tar.xz
 
@@ -11,6 +12,16 @@ cd poky-dora-10.0.1
 git clone git://git.yoctoproject.org/meta-ti.git
 cd meta-ti
 git checkout dora
-git am ~/bbb/yocto-labs/0001-beaglebone-use-the-am335x_boneblack-u-boot-configura.patch
+git am ~/yocto_bbb/yocto-labs/0001-beaglebone-use-the-am335x_boneblack-u-boot-configura.patch
+cd ..
+
+source oe-init-build-env
 
 
+echo "MACHINE = \"beaglebone\"" >> conf/local.conf
+echo "BBLAYERS += \"$HOME/yocto_bbb/poky-dora-10.0.1/meta-ti\"" >> conf/bblayers.conf
+
+bitbake core-image-minimal
+
+#bitbake core-image-sato
+#bitbake core-image-sato-sdk
