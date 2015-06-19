@@ -11,6 +11,8 @@ help:
 clean:
 	rm -f d_ff
 	rm -f d_ff.vvp
-
+	rm -f *.vcd
+wave:
+	gtkwave dump.vcd
 
 
