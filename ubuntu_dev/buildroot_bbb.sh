@@ -4,8 +4,8 @@
 git clone git://git.buildroot.net/buildroot br_bbb
 
 cd br_bbb
-#make minnowboard_max_defconfig
-#make
+make beaglebone_defconfig
+make
 
 
 # prepare SD card

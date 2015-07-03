@@ -1,4 +1,3 @@
 #!/bin/bash
 
-sudo apt-get install uuid-dev g++
-sudo apt-get install nasm
+sudo apt-get -y install uuid-dev g++ nasm
