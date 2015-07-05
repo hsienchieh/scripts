@@ -29,7 +29,14 @@ sudo make install
 ln -s /usr/local/systemc /usr/local/SystemC_install/systemc-2.3.1
 cd ..
 cd scv-2.0.0
+export SYSTEMC_HOME=/usr/local/SystemC_install/systemc-2.3.1/
+
 ./configure --with-systemc=$SYSTEMC_HOME
 make
 sudo make install
+
+cd ..
+
+cd systemc_regressions-2.3.1
+scripts/verify.pl systemc tlm
 
