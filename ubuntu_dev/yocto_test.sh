@@ -1,8 +1,5 @@
 #!/bin/bash
 
-sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib \
-     build-essential chrpath socat
-
 
 # Graphical and Eclipse Plug-in 
 #sudo apt-get install libsdl1.2-dev xterm
