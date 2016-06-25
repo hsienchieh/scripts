@@ -14,4 +14,3 @@ repo sync
 ./build_image dev --board=raspberrypi2 --noenable_rootfs_verification
 
 #cros_sdk --delete
-
