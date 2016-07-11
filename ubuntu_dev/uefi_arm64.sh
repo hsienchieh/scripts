@@ -20,6 +20,11 @@ make -C BaseTools
 unset ARCH WORKSPACE
 . edksetup.sh
 
+cp ./BaseTools/Conf/target.template Conf/target.txt
+cp ./BaseTools/Conf/tools_def.template Conf/tools.def.txt
+cp ./BaseTools/Conf/tools_def.template Conf/tools_def.txt
+cp ./BaseTools/Conf/build_rule.template Conf/build_rule.txt
+
 
 GCC47_AARCH64_PREFIX=$TOOL_PATH/gcc-linaro-aarch64-linux-gnu-4.8-2013.07-1_linux/bin/ build -a AARCH64 -t GCC48 -p ArmVirtPkg/ArmVirtQemu.dsc
 
