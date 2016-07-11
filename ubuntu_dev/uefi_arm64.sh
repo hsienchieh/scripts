@@ -2,6 +2,8 @@
 # https://github.com/tianocore/tianocore.github.io/wiki/ArmPlatformPkg-AArch64
 
 # git clone http://git.linaro.org/uefi/uefi-tools.git
+# git clone https://git.linaro.org/uefi/linaro-edk2.git -b release
+
 
 svn co https://svn.code.sf.net/p/edk2/code/trunk/edk2 edk2 --username guest
 
