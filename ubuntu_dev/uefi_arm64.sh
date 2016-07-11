@@ -3,7 +3,7 @@
 
 # git clone http://git.linaro.org/uefi/uefi-tools.git
 # git clone https://git.linaro.org/uefi/linaro-edk2.git -b release
-
+#https://wiki.linaro.org/ARM/UEFI#Linaro_Release_builds
 
 svn co https://svn.code.sf.net/p/edk2/code/trunk/edk2 edk2 --username guest
 
