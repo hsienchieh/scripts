@@ -1,8 +1,7 @@
 #!/bin/bash
-
-
 # https://github.com/tianocore/tianocore.github.io/wiki/ArmPlatformPkg-AArch64
 
+# git clone http://git.linaro.org/uefi/uefi-tools.git
 
 svn co https://svn.code.sf.net/p/edk2/code/trunk/edk2 edk2 --username guest
 
