@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#https://github.com/andreiw/ppc64le-edk2
+#http://osdevnotes.blogspot.com/
+#https://www.flamingspork.com/blog/2015/08/28/running-opal-in-qemu-the-powernv-platform/
+#http://github.com/andreiw/ppc64le_hello
+
+
 
 pushd
 
