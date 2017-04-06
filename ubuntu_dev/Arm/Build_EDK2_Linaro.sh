@@ -8,7 +8,8 @@ export UEFI_TOOLS_DIR="$PWD"/uefi-tools
 export PATH=$PATH:"$UEFI_TOOLS_DIR"
 
 wget https://git.linaro.org/uefi/linaro-edk2.git/snapshot/linaro-edk2-armlt-16.04.tar.gz
-tar xvf linaro-edk2-armlt-16.0.4.tar.gz
+tar xvf linaro-edk2-armlt-16.04.tar.gz
+
 export LINARO_EDK2_DIR="$PWD"/linaro-edk2-armlt-16.04
 
 cd $LINARO_EDK2_DIR
